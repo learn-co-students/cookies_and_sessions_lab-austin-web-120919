@@ -1,0 +1,17 @@
+<h1>Products#root</h1>
+<p>
+    <%= form_for @product, url: '/' do |f| %>
+        <%= f.label 'product '%>
+        <%= f.text_field :product %>
+
+        <%= f.submit%>
+    <% end %>
+</p>
+
+Cart: 
+<ul>
+    <% cart.each do |product| %>
+        <li><%= product %></li>
+    <% end %>
+</ul>
+
